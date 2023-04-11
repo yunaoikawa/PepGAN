@@ -4,7 +4,8 @@ import random
 
 import nltk
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf 
+tf.disable_v2_behavior()
 from scipy.spatial.distance import cosine
 
 from utils.metrics.Metrics import Metrics
